@@ -1,0 +1,12 @@
+Coloque aqui o firmware completo gerado no formato merged.bin.
+
+Para SSD1306, o arquivo precisa se chamar exatamente:
+v50_ssd1306_merged.bin
+
+Se também usar SH1106, coloque:
+v50_sh1106_merged.bin
+
+IMPORTANTE:
+- O arquivo .ino NÃO é gravado pelo site.
+- O site ESP Web Tools grava arquivo .bin.
+- Compile o .ino no Arduino IDE e gere/exporte o merged.bin antes.

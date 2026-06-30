@@ -1,0 +1,15 @@
+{
+  "name": "Programadora Cardoso V50 SSD1306",
+  "version": "V50",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "firmware/v50_ssd1306_merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

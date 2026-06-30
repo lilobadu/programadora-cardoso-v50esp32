@@ -1,0 +1,15 @@
+SITE CARDOSO ONLINE V50 - BASE FUNCIONAL + CORRECAO SH1106
+
+Endereços locais:
+Cliente: http://localhost:3000/cliente
+Painel:  http://localhost:3000/painel
+
+Coloque os firmwares em:
+public/firmware/v50_ssd1306_merged.bin
+public/firmware/v50_sh1106_merged.bin
+
+Correção aplicada:
+- Mantida a base funcional que lia ID e enviava ao painel.
+- Corrigido erro falso na SH1106: se a ESP32 grava a licença e reinicia rápido sem mandar confirmação serial,
+  o site não mostra mais 'ESP32 não confirmou licença'.
+- Manifests mantidos apontando para public/firmware/.

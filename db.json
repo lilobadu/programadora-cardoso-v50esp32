@@ -1,0 +1,58 @@
+{
+  "clientes": [
+    {
+      "uuid": "mqzxcnx71v24t2",
+      "status": "ativo",
+      "criadoEm": "2026-06-30T00:44:45.211Z",
+      "historico": [
+        {
+          "data": "2026-06-30T00:45:24.882Z",
+          "acao": "ativado",
+          "licenca": "DB54-859A-4CE5-2667-1369-9B62-1980-CA8E"
+        },
+        {
+          "data": "2026-06-30T00:44:45.211Z",
+          "acao": "pedido recebido"
+        }
+      ],
+      "nome": "",
+      "telefone": "",
+      "cidade": "",
+      "endereco": "",
+      "email": "",
+      "oled": "SSD1306",
+      "id": "908A37470968",
+      "versao": "V50",
+      "atualizadoEm": "2026-06-30T00:44:45.211Z",
+      "licenca": "DB54-859A-4CE5-2667-1369-9B62-1980-CA8E",
+      "ativadoEm": "2026-06-30T00:45:24.882Z"
+    },
+    {
+      "uuid": "mqzx7hpmb1uf4j",
+      "status": "ativo",
+      "criadoEm": "2026-06-30T00:40:43.882Z",
+      "historico": [
+        {
+          "data": "2026-06-30T00:41:53.044Z",
+          "acao": "ativado",
+          "licenca": "B231-62FD-847A-A5CF-CF4D-4863-2008-BAA4"
+        },
+        {
+          "data": "2026-06-30T00:40:43.882Z",
+          "acao": "pedido recebido"
+        }
+      ],
+      "nome": "",
+      "telefone": "",
+      "cidade": "",
+      "endereco": "",
+      "email": "",
+      "oled": "SH1106",
+      "id": "78777E077000",
+      "versao": "V50",
+      "atualizadoEm": "2026-06-30T00:40:43.882Z",
+      "licenca": "B231-62FD-847A-A5CF-CF4D-4863-2008-BAA4",
+      "ativadoEm": "2026-06-30T00:41:53.043Z"
+    }
+  ]
+}

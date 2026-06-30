@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Programadora Cardoso V50</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Programadora Cardoso V50</h1>
+
+    <section class="card">
+      <h2>Dados do cliente</h2>
+      <input id="nome" placeholder="Nome completo">
+      <input id="telefone" placeholder="Telefone / WhatsApp">
+      <input id="cidade" placeholder="Cidade">
+      <input id="endereco" placeholder="Endereço">
+      <input id="email" placeholder="E-mail opcional">
+      <select id="oled">
+        <option value="SH1106">OLED SH1106</option>
+        <option value="SSD1306">OLED SSD1306</option>
+      </select>
+    </section>
+
+    <section class="card">
+      <h2>Modo manual seguro</h2>
+      <p>Use em duas etapas. Primeiro grave/atualize o firmware se precisar. Depois envie o ID para ativar.</p>
+
+      <button id="btnGravarFirmware" class="installBtn">1 - GRAVAR / ATUALIZAR FIRMWARE</button>
+      <button id="btnAtivar" style="margin-top:12px">2 - ENVIAR ID AO PAINEL / ATIVAR</button>
+
+      <div id="webFlashBox" class="flashBox hidden">
+        <h3>Gravador de firmware</h3>
+        <p>Confira o display escolhido acima. Clique em <b>INSTALAR FIRMWARE</b>, escolha a porta da ESP32 e aguarde 100%.</p>
+        <p>Quando terminar, feche a janela do instalador e clique no botão <b>2 - ENVIAR ID AO PAINEL / ATIVAR</b>.</p>
+        <esp-web-install-button id="installButton" manifest="manifest_sh1106.json">
+          <button slot="activate" class="installBtn">INSTALAR FIRMWARE</button>
+        </esp-web-install-button>
+      </div>
+
+      <pre id="log">Aguardando...</pre>
+    </section>
+  </main>
+  <script src="app.js?v=12"></script>
+</body>
+</html>

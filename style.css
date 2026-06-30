@@ -1,0 +1,11 @@
+body{margin:0;background:#0b111c;color:#fff;font-family:Arial,Helvetica,sans-serif}
+.wrap{max-width:980px;margin:50px auto;padding:20px}
+h1{font-size:42px}
+.card{background:#1b1b1b;border:1px solid #333;border-radius:16px;padding:26px;margin:24px 0}
+input,select{width:100%;font-size:20px;padding:16px;margin:10px 0;border-radius:10px;border:0}
+button{width:100%;font-size:28px;font-weight:700;padding:22px;border:0;border-radius:10px;background:#1683f8;color:#fff;cursor:pointer}
+button:disabled{opacity:.5;cursor:not-allowed}
+.installBtn{background:#0bbf64;margin-top:10px}
+pre{background:#000;color:#00ff66;min-height:210px;padding:18px;border-radius:10px;white-space:pre-wrap;font-size:16px}
+.hidden{display:none}
+.flashBox{border:1px solid #0bbf64;border-radius:12px;padding:18px;margin:18px 0;background:#071b12}

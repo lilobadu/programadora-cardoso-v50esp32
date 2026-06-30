@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Painel Cardoso V50</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+table{width:100%;border-collapse:collapse;background:#111b2a}
+td,th{border-bottom:1px solid #26374f;padding:12px;text-align:left}
+.aprovar{background:#10b981;font-size:16px;padding:10px}
+.negar{background:#ef4444;font-size:16px;padding:10px}
+.small{width:auto;margin:2px}
+</style>
+</head>
+<body>
+<main class="wrap">
+<h1>PAINEL CARDOSO V50</h1>
+<button class="small" onclick="carregar()">Atualizar</button>
+<table>
+<thead><tr><th>Status</th><th>Cliente</th><th>Telefone</th><th>Cidade</th><th>OLED</th><th>ID ESP32</th><th>Versão</th><th>Ações</th></tr></thead>
+<tbody id="lista"></tbody>
+</table>
+</main>
+<script>
+async function carregar(){
+  const res = await fetch('/api/clientes');
+  const arr = await res.json();
+  document.getElementById('lista').innerHTML = arr.map(c=>`
+  <tr>
+    <td>${c.status||''}</td>
+    <td>${c.nome||''}</td>
+    <td>${c.telefone||''}</td>
+    <td>${c.cidade||''}</td>
+    <td>${c.oled||''}</td>
+    <td>${c.id||''}</td>
+    <td>${c.versao||''}</td>
+    <td>
+      <button class="small aprovar" onclick="aprovar('${c.uuid}')">APROVAR</button>
+      <button class="small negar" onclick="negar('${c.uuid}')">NEGAR</button>
+    </td>
+  </tr>`).join('');
+}
+async function aprovar(id){ await fetch('/api/ativar/'+id,{method:'POST'}); carregar(); }
+async function negar(id){ await fetch('/api/negar/'+id,{method:'POST'}); carregar(); }
+carregar(); setInterval(carregar,3000);
+</script>
+</body>
+</html>

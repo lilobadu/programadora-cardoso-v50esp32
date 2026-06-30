@@ -1,0 +1,18 @@
+PROGRAMADORA CARDOSO V50 ONLINE - MODO MANUAL SEGURO
+
+Cliente:
+http://localhost:3000/cliente
+
+Painel do dono:
+http://localhost:3000/painel
+
+Como usar:
+1) Escolha SSD1306 ou SH1106.
+2) Para placa virgem ou atualização, clique em: 1 - GRAVAR / ATUALIZAR FIRMWARE.
+3) Depois que instalar 100%, clique em: 2 - ENVIAR ID AO PAINEL / ATIVAR.
+4) No painel do dono, clique em APROVAR.
+5) O cliente recebe a licença e ativa a programadora.
+
+Firmwares precisam ficar em:
+public/firmware/v50_ssd1306_merged.bin
+public/firmware/v50_sh1106_merged.bin

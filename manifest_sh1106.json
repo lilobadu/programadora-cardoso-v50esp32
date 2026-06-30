@@ -1,0 +1,15 @@
+{
+  "name": "Programadora Cardoso V50 SH1106",
+  "version": "V50",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "firmware/v50_sh1106_merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
