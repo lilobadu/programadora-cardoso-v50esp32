@@ -5,7 +5,7 @@ const cors = require("cors");
 const crypto = require("crypto");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DB_FILE = path.join(__dirname, "db.json");
 const SECRET = "ELETRONICA_CARDOSO_PMIC_V50_OFFLINE_2026";
 
